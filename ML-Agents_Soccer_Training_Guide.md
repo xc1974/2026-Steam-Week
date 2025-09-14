@@ -2,9 +2,65 @@
 # ML-Agents 足球智能體訓練與比賽指南
 
 <div align="center">
-  <button id="lang-en" onclick="switchLanguage('en')" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; margin: 5px; border-radius: 5px; cursor: pointer;">English</button>
-  <button id="lang-zh" onclick="switchLanguage('zh')" style="background-color: #28a745; color: white; border: none; padding: 10px 20px; margin: 5px; border-radius: 5px; cursor: pointer;">繁體中文</button>
+  <button id="lang-en" onclick="switchLanguage('en')" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; margin: 5px; border-radius: 5px; cursor: pointer; font-weight: bold;">English</button>
+  <button id="lang-zh" onclick="switchLanguage('zh')" style="background-color: #6c757d; color: white; border: none; padding: 10px 20px; margin: 5px; border-radius: 5px; cursor: pointer;">繁體中文</button>
 </div>
+
+<script>
+function switchLanguage(lang) {
+    // Hide all language content
+    const allContent = document.querySelectorAll('.lang-content');
+    allContent.forEach(content => {
+        content.style.display = 'none';
+    });
+    
+    // Show selected language content
+    const selectedContent = document.querySelectorAll(`[id$="-${lang}"]`);
+    selectedContent.forEach(content => {
+        content.style.display = 'block';
+    });
+    
+    // Update button styles
+    const enButton = document.getElementById('lang-en');
+    const zhButton = document.getElementById('lang-zh');
+    
+    if (lang === 'en') {
+        enButton.style.backgroundColor = '#007bff';
+        enButton.style.fontWeight = 'bold';
+        zhButton.style.backgroundColor = '#6c757d';
+        zhButton.style.fontWeight = 'normal';
+    } else {
+        zhButton.style.backgroundColor = '#28a745';
+        zhButton.style.fontWeight = 'bold';
+        enButton.style.backgroundColor = '#6c757d';
+        enButton.style.fontWeight = 'normal';
+    }
+    
+    // Store language preference
+    localStorage.setItem('selectedLanguage', lang);
+}
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+    switchLanguage(savedLang);
+});
+</script>
+
+<style>
+.lang-content {
+    transition: opacity 0.3s ease-in-out;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+</style>
 
 ---
 

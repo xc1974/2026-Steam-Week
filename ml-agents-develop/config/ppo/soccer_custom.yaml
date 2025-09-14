@@ -1,0 +1,26 @@
+behaviors:
+  SoccerTwos:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 2048          # 增加批次大小以提高训练稳定性
+      buffer_size: 20480         # 更大的经验缓冲区
+      learning_rate: 0.0002     # 稍微降低学习率以提高稳定性
+      beta: 0.01                 # 熵正则化，鼓励探索
+      epsilon: 0.2               # PPO裁剪参数
+      lambd: 0.95                # GAE参数
+      num_epoch: 10              # 训练轮数
+      learning_rate_schedule: linear
+    network_settings:
+      normalize: true            # 启用输入标准化
+      hidden_units: 512          # 增加网络容量
+      num_layers: 3              # 增加网络深度
+      vis_encode_type: simple    # 视觉编码器
+    reward_signals:
+      extrinsic:
+        gamma: 0.99             # 折扣因子
+        strength: 1.0           # 奖励强度
+    keep_checkpoints: 10         # 保留更多检查点
+    max_steps: 20000000          # 增加训练步数
+    time_horizon: 1000           # 时间范围
+    summary_freq: 50000          # 统计频率
+    threaded: true               # 启用多线程训练

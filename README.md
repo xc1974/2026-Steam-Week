@@ -176,7 +176,8 @@ This workshop provides a comprehensive introduction to ML-Agents soccer training
 本工作坊提供了ML-Agents足球訓練的綜合介紹。通過實際練習和詳細指南，參與者將獲得訓練AI智能體和設置比賽的實踐經驗。
 
 **Happy Training! / 訓練愉快！** 🚀⚽
-**Collaborator: xc11~ / shirasuazusasaikou / celestial_fawn_00623
+
+**Collaborator: xc11~ / shirasuazusasaikou / celestial_fawn_00623**
 
 ---
 

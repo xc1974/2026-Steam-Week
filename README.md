@@ -7,9 +7,9 @@
   
   <p><strong>Choose your language / 選擇您的語言</strong></p>
   
-  <a href="WORKSHOP_README_EN.md" style="display: inline-block; background-color: #007bff; color: white; padding: 15px 30px; margin: 10px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">🇺🇸 English</a>
+  <a href="WORKSHOP_README_EN.md" style="display: inline-block; background-color: #007bff; color: white; padding: 15px 30px; margin: 10px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">English</a>
   
-  <a href="WORKSHOP_README_ZH.md" style="display: inline-block; background-color: #28a745; color: white; padding: 15px 30px; margin: 10px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">🇹🇼 繁體中文</a>
+  <a href="WORKSHOP_README_ZH.md" style="display: inline-block; background-color: #28a745; color: white; padding: 15px 30px; margin: 10px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">繁體中文</a>
 </div>
 
 ---

@@ -1,6 +1,11 @@
 # ML-Agents Soccer Agent Training and Competition Guide
 # ML-Agents 足球智能體訓練與比賽指南
 
+<div align="center">
+  <button id="lang-en" onclick="switchLanguage('en')" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; margin: 5px; border-radius: 5px; cursor: pointer;">English</button>
+  <button id="lang-zh" onclick="switchLanguage('zh')" style="background-color: #28a745; color: white; border: none; padding: 10px 20px; margin: 5px; border-radius: 5px; cursor: pointer;">繁體中文</button>
+</div>
+
 ---
 
 ## Table of Contents / 目錄
@@ -17,6 +22,7 @@
 
 ## Overview / 概述
 
+<div id="overview-en" class="lang-content">
 ### English
 This guide provides a comprehensive approach to training soccer agents using ML-Agents and setting up competitions between trained models. The ML-Agents toolkit includes a complete soccer environment with 2v2 matches and striker vs goalkeeper scenarios.
 
@@ -27,6 +33,7 @@ This guide provides a comprehensive approach to training soccer agents using ML-
 
 ## Environment Setup / 環境設置
 
+<div id="environment-en" class="lang-content">
 ### English
 
 #### 1. Project Structure
@@ -44,7 +51,9 @@ Project/Assets/ML-Agents/Examples/Soccer/
 #### 2. Available Scenes
 - **SoccerTwos.unity**: Main 2v2 competition scene
 - **StrikersVsGoalie.unity**: Training scene for specific roles
+</div>
 
+<div id="environment-zh" class="lang-content" style="display: none;">
 ### 繁體中文
 
 #### 1. 專案結構
@@ -62,11 +71,13 @@ Project/Assets/ML-Agents/Examples/Soccer/
 #### 2. 可用場景
 - **SoccerTwos.unity**: 主要2v2比賽場景
 - **StrikersVsGoalie.unity**: 特定角色訓練場景
+</div>
 
 ---
 
 ## Training Configuration / 訓練配置
 
+<div id="training-config-en" class="lang-content">
 ### English
 
 #### 1. Configuration Files
@@ -104,7 +115,9 @@ behaviors:
 - **hidden_units**: Network capacity
 - **num_layers**: Network depth
 - **max_steps**: Total training duration
+</div>
 
+<div id="training-config-zh" class="lang-content" style="display: none;">
 ### 繁體中文
 
 #### 1. 配置檔案
@@ -142,11 +155,13 @@ behaviors:
 - **hidden_units**: 網路容量
 - **num_layers**: 網路深度
 - **max_steps**: 總訓練時長
+</div>
 
 ---
 
 ## Model Training Process / 模型訓練過程
 
+<div id="training-process-en" class="lang-content">
 ### English
 
 #### 1. Starting Training
@@ -182,7 +197,9 @@ results/soccer_training/
 ├── summaries/                   # Training metrics
 └── run_logs/                    # Training logs
 ```
+</div>
 
+<div id="training-process-zh" class="lang-content" style="display: none;">
 ### 繁體中文
 
 #### 1. 開始訓練
@@ -218,11 +235,13 @@ results/soccer_training/
 ├── summaries/                   # 訓練指標
 └── run_logs/                    # 訓練日誌
 ```
+</div>
 
 ---
 
 ## Importing Trained Models / 導入訓練模型
 
+<div id="import-models-en" class="lang-content">
 ### English
 
 #### 1. Locate the Trained Model
@@ -257,7 +276,9 @@ behaviorParams.Model = trainedModel;  // Your .onnx file
 behaviorParams.BehaviorType = BehaviorType.InferenceOnly;
 behaviorParams.InferenceDevice = InferenceDevice.CPU;
 ```
+</div>
 
+<div id="import-models-zh" class="lang-content" style="display: none;">
 ### 繁體中文
 
 #### 1. 定位訓練模型
@@ -292,11 +313,13 @@ behaviorParams.Model = trainedModel;  // 你的 .onnx 檔案
 behaviorParams.BehaviorType = BehaviorType.InferenceOnly;
 behaviorParams.InferenceDevice = InferenceDevice.CPU;
 ```
+</div>
 
 ---
 
 ## Setting Up Competitions / 設置比賽
 
+<div id="competitions-en" class="lang-content">
 ### English
 
 #### 1. Competition Scenarios
@@ -365,7 +388,9 @@ public class SoccerCompetitionController : SoccerEnvController
     }
 }
 ```
+</div>
 
+<div id="competitions-zh" class="lang-content" style="display: none;">
 ### 繁體中文
 
 #### 1. 比賽場景
@@ -434,11 +459,13 @@ public class SoccerCompetitionController : SoccerEnvController
     }
 }
 ```
+</div>
 
 ---
 
 ## Advanced Configuration / 進階配置
 
+<div id="advanced-config-en" class="lang-content">
 ### English
 
 #### 1. Self-Play Training
@@ -493,7 +520,9 @@ behaviors:
         gamma: 0.99
         encoding_size: 128
 ```
+</div>
 
+<div id="advanced-config-zh" class="lang-content" style="display: none;">
 ### 繁體中文
 
 #### 1. 自我對戰訓練
@@ -548,11 +577,13 @@ behaviors:
         gamma: 0.99
         encoding_size: 128
 ```
+</div>
 
 ---
 
 ## Troubleshooting / 故障排除
 
+<div id="troubleshooting-en" class="lang-content">
 ### English
 
 #### Common Issues and Solutions
@@ -585,7 +616,9 @@ behaviors:
   - Reduce batch size
   - Decrease buffer size
   - Use fewer concurrent environments
+</div>
 
+<div id="troubleshooting-zh" class="lang-content" style="display: none;">
 ### 繁體中文
 
 #### 常見問題和解決方案
@@ -618,11 +651,13 @@ behaviors:
   - 減少批次大小
   - 降低緩衝區大小
   - 使用更少的並發環境
+</div>
 
 ---
 
 ## Quick Start Checklist / 快速開始檢查清單
 
+<div id="checklist-en" class="lang-content">
 ### English
 - [ ] Install ML-Agents toolkit
 - [ ] Open Unity project
@@ -634,7 +669,9 @@ behaviors:
 - [ ] Configure agent behavior parameters
 - [ ] Set up competition scene
 - [ ] Test and iterate
+</div>
 
+<div id="checklist-zh" class="lang-content" style="display: none;">
 ### 繁體中文
 - [ ] 安裝ML-Agents工具包
 - [ ] 打開Unity專案
@@ -646,11 +683,13 @@ behaviors:
 - [ ] 配置智能體行為參數
 - [ ] 設置比賽場景
 - [ ] 測試和迭代
+</div>
 
 ---
 
 ## Conclusion / 結論
 
+<div id="conclusion-en" class="lang-content">
 ### English
 This guide provides a comprehensive approach to training soccer agents and setting up competitions using ML-Agents. The key to success is:
 
@@ -660,7 +699,9 @@ This guide provides a comprehensive approach to training soccer agents and setti
 4. **Systematic Testing**: Test different scenarios and configurations
 
 With these steps, you can create competitive soccer agents that can play against each other in exciting matches.
+</div>
 
+<div id="conclusion-zh" class="lang-content" style="display: none;">
 ### 繁體中文
 本指南提供了使用ML-Agents訓練足球智能體和設置比賽的全面方法。成功的關鍵是：
 
@@ -670,7 +711,64 @@ With these steps, you can create competitive soccer agents that can play against
 4. **系統性測試**: 測試不同場景和配置
 
 通過這些步驟，你可以創建能夠在精彩比賽中相互對戰的競爭性足球智能體。
+</div>
 
 ---
 
 *For more information, visit the [ML-Agents Documentation](https://github.com/Unity-Technologies/ml-agents) / 更多資訊請訪問 [ML-Agents 文檔](https://github.com/Unity-Technologies/ml-agents)*
+
+<script>
+function switchLanguage(lang) {
+    // Hide all language content
+    const allContent = document.querySelectorAll('.lang-content');
+    allContent.forEach(content => {
+        content.style.display = 'none';
+    });
+    
+    // Show selected language content
+    const selectedContent = document.querySelectorAll(`[id$="-${lang}"]`);
+    selectedContent.forEach(content => {
+        content.style.display = 'block';
+    });
+    
+    // Update button styles
+    const enButton = document.getElementById('lang-en');
+    const zhButton = document.getElementById('lang-zh');
+    
+    if (lang === 'en') {
+        enButton.style.backgroundColor = '#007bff';
+        enButton.style.color = 'white';
+        zhButton.style.backgroundColor = '#6c757d';
+        zhButton.style.color = 'white';
+    } else {
+        zhButton.style.backgroundColor = '#28a745';
+        zhButton.style.color = 'white';
+        enButton.style.backgroundColor = '#6c757d';
+        enButton.style.color = 'white';
+    }
+    
+    // Store language preference
+    localStorage.setItem('selectedLanguage', lang);
+}
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+    switchLanguage(savedLang);
+});
+</script>
+
+<style>
+.lang-content {
+    transition: opacity 0.3s ease-in-out;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+</style>

@@ -180,7 +180,7 @@ This workshop provides a comprehensive introduction to ML-Agents soccer training
 ---
 
 <div align="center">
-  <p><strong>Last Updated: December 2024 / 最後更新：2024年12月</strong></p>
+  <p><strong>Last Updated: september 2025 / 最後更新：2025年9月</strong></p>
   
   <p>
     <a href="WORKSHOP_README_EN.md">English Version</a> | 

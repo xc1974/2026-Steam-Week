@@ -94,29 +94,6 @@ mlagents-learn config/ppo/SoccerTwos.yaml --env=Project/Assets/ML-Agents/Example
 # Monitor training progress
 tensorboard --logdir=results/my_first_training
 ```
-
----
-
-## 📋 Workshop Schedule
-
-#### Session 1: Introduction and Setup (60 minutes)
-- **Overview of ML-Agents and soccer environment**
-- **Project structure and navigation**
-- **Basic YAML configuration understanding**
-- **First training run**
-
-#### Session 2: YAML Configuration Deep Dive (90 minutes)
-- **Parameter explanation and impact analysis**
-- **Hands-on YAML modification exercises**
-- **Different training strategies**
-- **Performance comparison**
-
-#### Session 3: Advanced Training and Competition (90 minutes)
-- **Model import and Unity configuration**
-- **Setting up competitions between agents**
-- **Monitoring and optimization**
-- **Troubleshooting and best practices**
-
 ---
 
 ## 🛠️ Available Resources
@@ -138,42 +115,6 @@ tensorboard --logdir=results/my_first_training
 - **`ML-Agents_Soccer_Training_Guide_EN.md`**: Complete training workflow
 - **`SoccerTwos_YAML_Training_Guide_EN.md`**: YAML configuration guide
 - **`docs/`**: Official ML-Agents documentation
-
----
-
-## 🎮 Workshop Exercises
-
-#### Exercise 1: Basic Parameter Modification
-**Objective**: Learn to modify basic training parameters
-**Time**: 30 minutes
-
-**Steps**:
-1. Copy `config/ppo/SoccerTwos.yaml` to `config/ppo/SoccerTwos_exercise1.yaml`
-2. Modify `learning_rate` from `0.0003` to `0.001`
-3. Modify `max_steps` from `10000000` to `2000000`
-4. Run training and compare results
-
-#### Exercise 2: Network Architecture Experiment
-**Objective**: Experiment with different network sizes
-**Time**: 45 minutes
-
-**Steps**:
-1. Create three configurations:
-   - Small network: `hidden_units: 64, num_layers: 1`
-   - Medium network: `hidden_units: 256, num_layers: 2`
-   - Large network: `hidden_units: 512, num_layers: 3`
-2. Train each configuration
-3. Compare training performance and final results
-
-#### Exercise 3: Competition Setup
-**Objective**: Set up competitions between trained agents
-**Time**: 60 minutes
-
-**Steps**:
-1. Train two different models with different configurations
-2. Import both models into Unity scene
-3. Configure agents to use different models
-4. Run competition and analyze results
 
 ---
 
@@ -220,4 +161,5 @@ This workshop provides a comprehensive introduction to ML-Agents soccer training
 
 ---
 
-*Last Updated: December 2024*
+*Last Updated: September 2025*
+

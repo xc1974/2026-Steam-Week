@@ -61,23 +61,6 @@ tensorboard --logdir=results/my_first_training
 - **`results/`**: Training outputs and model checkpoints / 訓練輸出和模型檢查點
 
 ---
-
-## 🎮 Workshop Exercises / 工作坊練習
-
-### Exercise 1: Basic Parameter Modification / 練習1：基本參數修改
-**Objective / 目標**: Learn to modify basic training parameters / 學習修改基本訓練參數
-**Time / 時間**: 30 minutes / 30分鐘
-
-### Exercise 2: Network Architecture Experiment / 練習2：網路架構實驗
-**Objective / 目標**: Experiment with different network sizes / 實驗不同的網路大小
-**Time / 時間**: 45 minutes / 45分鐘
-
-### Exercise 3: Competition Setup / 練習3：比賽設置
-**Objective / 目標**: Set up competitions between trained agents / 設置訓練智能體之間的比賽
-**Time / 時間**: 60 minutes / 60分鐘
-
----
-
 ## 🔧 Troubleshooting / 故障排除
 
 ### Common Issues / 常見問題

@@ -141,5 +141,6 @@ tensorboard --logdir=results/my_first_training
 
 ---
 
-*最後更新：2024年12月*
+*最後更新：2025年9月*
+
 

@@ -64,7 +64,7 @@ By the end of this workshop, participants will be able to:
 
 ### Prerequisites / 先決條件
 - Unity 2022.3 or later / Unity 2022.3 或更新版本
-- Python 3.8 or later / Python 3.8 或更新版本
+- Python 3.8 (recommand to use Anaconda) / Python 3.8 (建議使用 Anaconda)
 - ML-Agents toolkit installed / 已安裝ML-Agents工具包
 - Basic understanding of machine learning concepts / 對機器學習概念的基本理解
 

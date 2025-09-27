@@ -14,14 +14,6 @@
 
 ---
 
-## 📚 Workshop Overview / 工作坊概述
-
-Welcome to the ML-Agents Soccer Training Workshop! This comprehensive workshop teaches participants how to train AI agents to play soccer using Unity's ML-Agents toolkit.
-
-歡迎來到ML-Agents足球訓練工作坊！這個綜合工作坊教導參與者如何使用Unity的ML-Agents工具包訓練AI智能體踢足球。
-
----
-
 ## 📖 Available Materials / 可用材料
 
 ### English Documentation / 英文文檔

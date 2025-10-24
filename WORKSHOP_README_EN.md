@@ -2,7 +2,7 @@
 
 [![ML-Agents](https://img.shields.io/badge/ML--Agents-v2.0-blue.svg)](https://github.com/Unity-Technologies/ml-agents)
 [![Unity](https://img.shields.io/badge/Unity-2022.3+-green.svg)](https://unity.com/)
-[![Python](https://img.shields.io/badge/Python-3.8+-yellow.svg)](https://python.org/)
+[![Python](https://img.shields.io/badge/Python-3.8-yellow.svg)](https://python.org/)
 
 ---
 
@@ -61,7 +61,7 @@ By the end of this workshop, participants will be able to:
 
 #### Prerequisites
 - Unity 2022.3 or later
-- Python 3.8 or later
+- Python 3.8 **only**
 - ML-Agents toolkit installed
 - Basic understanding of machine learning concepts
 
@@ -162,4 +162,5 @@ This workshop provides a comprehensive introduction to ML-Agents soccer training
 ---
 
 *Last Updated: September 2025*
+
 
